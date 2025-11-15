@@ -1,0 +1,14 @@
+[
+	{
+		"email" : "golu123@gmail.com",
+		"password" : "Golu@123",
+		"productsAdd" : "ZARA COAT 3",
+		"country" : "Ind"
+	},
+	{
+		"email" : "siddhu@patil.com",
+		"password" : "Siddhu@123",
+		"productsAdd" : "IPHONE 13 PRO",
+		"country" : "Ind"
+	}
+]
