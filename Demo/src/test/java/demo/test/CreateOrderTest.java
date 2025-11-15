@@ -57,7 +57,7 @@ public class CreateOrderTest extends BaseTest {
 		List<Object[]> allData = new ArrayList<Object[]>();
 		
 		for(int i=0;i<TestNames.length;i++) {
-			List<Object> data = ExcelData.getExcelData("D:\\Siddhu\\Data.xlsx", TestNames[i], "Sheet1", "TestCaseName");
+			List<Object> data = ExcelData.getExcelData(System.getProperty("user.dir")+"\\src\\main\\java\\demo\\resources\\Data.xlsx", TestNames[i], "Sheet1", "TestCaseName");
 			allData.add(new Object[] { data });
 			}
 		return allData.toArray(new Object[0][]);
