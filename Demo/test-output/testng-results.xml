@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-15T18:35:01 IST" name="Default suite" finished-at="2025-11-15T18:36:07 IST" duration-ms="65895">
+  <suite started-at="2025-11-15T20:57:49 IST" name="Default suite" finished-at="2025-11-15T20:59:31 IST" duration-ms="102346">
     <groups>
       <group name="purchase">
-        <method signature="CreateOrderTest.placeOrder(java.util.List)[pri:0, instance:demo.test.CreateOrderTest@2e61d218]" name="placeOrder" class="demo.test.CreateOrderTest"/>
+        <method signature="CreateOrderTest.placeOrder(java.util.List)[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" name="placeOrder" class="demo.test.CreateOrderTest"/>
       </group> <!-- purchase -->
     </groups>
-    <test started-at="2025-11-15T18:35:01 IST" name="Default test" finished-at="2025-11-15T18:36:07 IST" duration-ms="65895">
+    <test started-at="2025-11-15T20:57:49 IST" name="Default test" finished-at="2025-11-15T20:59:31 IST" duration-ms="102346">
       <class name="demo.test.CreateOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:demo.test.CreateOrderTest@2e61d218]" started-at="2025-11-15T18:35:03 IST" name="launchApplication" finished-at="2025-11-15T18:35:08 IST" duration-ms="4966" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" started-at="2025-11-15T20:57:51 IST" name="launchApplication" finished-at="2025-11-15T20:58:26 IST" duration-ms="35629" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="placeOrder(java.util.List)[pri:0, instance:demo.test.CreateOrderTest@2e61d218]" started-at="2025-11-15T18:35:08 IST" name="placeOrder" data-provider="getData" finished-at="2025-11-15T18:35:30 IST" duration-ms="22580" status="FAIL">
+        <test-method signature="placeOrder(java.util.List)[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" started-at="2025-11-15T20:58:26 IST" name="placeOrder" data-provider="getData" finished-at="2025-11-15T20:58:49 IST" duration-ms="22505" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -30,9 +30,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [44e79225ed16e1fc295569a7eb131ad7, findElement {using=xpath, value=//button[@routerlink='/dashboard/cart']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\HAHACO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:6122}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:6122/devtool..., se:cdpVersion: 142.0.7444.163, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 44e79225ed16e1fc295569a7eb131ad7]]>
+Command: [14683cc64c3784e82effc44cbd8f280c, findElement {using=xpath, value=//button[@routerlink='/dashboard/cart']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\HAHACO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:7032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:7032/devtool..., se:cdpVersion: 142.0.7444.163, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 14683cc64c3784e82effc44cbd8f280c]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@routerlink='/dashboard/cart']"}
@@ -41,9 +41,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [44e79225ed16e1fc295569a7eb131ad7, findElement {using=xpath, value=//button[@routerlink='/dashboard/cart']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\HAHACO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:6122}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:6122/devtool..., se:cdpVersion: 142.0.7444.163, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 44e79225ed16e1fc295569a7eb131ad7
+Command: [14683cc64c3784e82effc44cbd8f280c, findElement {using=xpath, value=//button[@routerlink='/dashboard/cart']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\HAHACO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:7032}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:7032/devtool..., se:cdpVersion: 142.0.7444.163, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 14683cc64c3784e82effc44cbd8f280c
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -108,15 +108,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo.test.CreateOrderTest@2e61d218]" started-at="2025-11-15T18:35:30 IST" name="tearDown" finished-at="2025-11-15T18:35:30 IST" duration-ms="97" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" started-at="2025-11-15T20:58:49 IST" name="tearDown" finished-at="2025-11-15T20:58:49 IST" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:demo.test.CreateOrderTest@2e61d218]" started-at="2025-11-15T18:35:30 IST" name="launchApplication" finished-at="2025-11-15T18:35:33 IST" duration-ms="2797" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" started-at="2025-11-15T20:58:49 IST" name="launchApplication" finished-at="2025-11-15T20:58:56 IST" duration-ms="6728" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="placeOrder(java.util.List)[pri:0, instance:demo.test.CreateOrderTest@2e61d218]" started-at="2025-11-15T18:35:33 IST" name="placeOrder" data-provider="getData" finished-at="2025-11-15T18:35:56 IST" duration-ms="22492" status="FAIL">
+        <test-method signature="placeOrder(java.util.List)[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" started-at="2025-11-15T20:58:56 IST" name="placeOrder" data-provider="getData" finished-at="2025-11-15T20:59:18 IST" duration-ms="22515" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -132,9 +132,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6e1dc6f689cc77c1c425a9e9894f636d, findElement {using=xpath, value=//button[@routerlink='/dashboard/cart']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\HAHACO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:6152}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:6152/devtool..., se:cdpVersion: 142.0.7444.163, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6e1dc6f689cc77c1c425a9e9894f636d]]>
+Command: [f86dee12b4cef99d9df28a84371d94f5, findElement {using=xpath, value=//button[@routerlink='/dashboard/cart']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\HAHACO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:7064}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:7064/devtool..., se:cdpVersion: 142.0.7444.163, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f86dee12b4cef99d9df28a84371d94f5]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@routerlink='/dashboard/cart']"}
@@ -143,9 +143,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6e1dc6f689cc77c1c425a9e9894f636d, findElement {using=xpath, value=//button[@routerlink='/dashboard/cart']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\HAHACO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:6152}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:6152/devtool..., se:cdpVersion: 142.0.7444.163, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6e1dc6f689cc77c1c425a9e9894f636d
+Command: [f86dee12b4cef99d9df28a84371d94f5, findElement {using=xpath, value=//button[@routerlink='/dashboard/cart']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\HAHACO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:7064}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:7064/devtool..., se:cdpVersion: 142.0.7444.163, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f86dee12b4cef99d9df28a84371d94f5
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -210,15 +210,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo.test.CreateOrderTest@2e61d218]" started-at="2025-11-15T18:35:56 IST" name="tearDown" finished-at="2025-11-15T18:35:56 IST" duration-ms="118" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" started-at="2025-11-15T20:59:18 IST" name="tearDown" finished-at="2025-11-15T20:59:18 IST" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:demo.test.CreateOrderTest@2e61d218]" started-at="2025-11-15T18:35:56 IST" name="launchApplication" finished-at="2025-11-15T18:36:00 IST" duration-ms="4345" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" started-at="2025-11-15T20:59:18 IST" name="launchApplication" finished-at="2025-11-15T20:59:24 IST" duration-ms="5538" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="placeOrder(java.util.List)[pri:0, instance:demo.test.CreateOrderTest@2e61d218]" started-at="2025-11-15T18:36:00 IST" name="placeOrder" data-provider="getData" finished-at="2025-11-15T18:36:07 IST" duration-ms="7113" status="PASS">
+        <test-method signature="placeOrder(java.util.List)[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" started-at="2025-11-15T20:59:24 IST" name="placeOrder" data-provider="getData" finished-at="2025-11-15T20:59:31 IST" duration-ms="7206" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -229,7 +229,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo.test.CreateOrderTest@2e61d218]" started-at="2025-11-15T18:36:07 IST" name="tearDown" finished-at="2025-11-15T18:36:07 IST" duration-ms="150" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" started-at="2025-11-15T20:59:31 IST" name="tearDown" finished-at="2025-11-15T20:59:31 IST" duration-ms="170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
