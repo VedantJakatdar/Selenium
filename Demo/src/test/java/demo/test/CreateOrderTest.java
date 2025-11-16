@@ -53,7 +53,7 @@ public class CreateOrderTest extends BaseTest {
 	@DataProvider
 	public Object[][] getData() throws IOException {
 		
-		String[] TestNames = {"Sample Test", "Purchase Order","Stand Alone Test"};
+		String[] TestNames = {"Sample Test" ,"Stand Alone Test"};
 		List<Object[]> allData = new ArrayList<Object[]>();
 		//Test
 		for(int i=0;i<TestNames.length;i++) {

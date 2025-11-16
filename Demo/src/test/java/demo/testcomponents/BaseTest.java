@@ -34,11 +34,15 @@ public class BaseTest {
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/WebDriver/chromedriver");
 			ChromeOptions options = new ChromeOptions();
 			if(browserName.contains("headless")) {
-				options.addArguments("--headless");
+				options.addArguments("--headless=new");
 				options.addArguments("--window-size=1920,1080");
-			    options.addArguments("--disable-gpu");
-			    options.addArguments("--no-sandbox");
-			    options.addArguments("--disable-dev-shm-usage");
+				options.addArguments("--no-sandbox");
+				options.addArguments("--disable-dev-shm-usage");
+				options.addArguments("--disable-gpu");
+				options.addArguments("--disable-extensions");
+				options.addArguments("--remote-allow-origins=*");
+			} else {
+				driver.manage().window().maximize();
 			}
 			options.setExperimentalOption("prefs", new HashMap<String, Object>(){{
 			put("profile.password_manager_leak_detection", false);}});
@@ -48,7 +52,6 @@ public class BaseTest {
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			//firefox code
 		}
-		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		return driver;
 	}
