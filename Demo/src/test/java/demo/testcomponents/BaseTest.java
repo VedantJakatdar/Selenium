@@ -31,7 +31,7 @@ public class BaseTest {
 		String browserName = System.getProperty("browser") != null ? System.getProperty("browser") : prop.getProperty("browser");
 		if(browserName.contains("chrome")) {
 			//System.setProperty("webdriver.chrome.driver", "D:\\Driver\\chromedriver.exe");
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/WebDriver/chromedriver");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/WebDriver/chromedriver.exe");
 			ChromeOptions options = new ChromeOptions();
 			if(browserName.contains("headless")) {
 				options.addArguments("--headless");
