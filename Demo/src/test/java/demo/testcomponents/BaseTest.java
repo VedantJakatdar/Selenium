@@ -33,6 +33,9 @@ public class BaseTest {
 			//System.setProperty("webdriver.chrome.driver", "D:\\Driver\\chromedriver.exe");
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/WebDriver/chromedriver.exe");
 			ChromeOptions options = new ChromeOptions();
+			options.setExperimentalOption("prefs", new HashMap<String, Object>(){{
+				put("profile.password_manager_leak_detection", false);}});
+				driver = new ChromeDriver(options);
 			if(browserName.contains("headless")) {
 				options.addArguments("--headless=new");
 				options.addArguments("--window-size=1920,1080");
@@ -43,10 +46,7 @@ public class BaseTest {
 				options.addArguments("--remote-allow-origins=*");
 			} else {
 				driver.manage().window().maximize();
-			}
-			options.setExperimentalOption("prefs", new HashMap<String, Object>(){{
-			put("profile.password_manager_leak_detection", false);}});
-			driver = new ChromeDriver(options);
+			}	
 		} else if (browserName.equalsIgnoreCase("edge")) {
 			//edge code
 		} else if (browserName.equalsIgnoreCase("firefox")) {
