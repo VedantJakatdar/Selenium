@@ -1,54 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-17T00:44:08 IST" name="Default suite" finished-at="2025-11-17T00:44:32 IST" duration-ms="23631">
+  <suite started-at="2025-11-17T01:13:06 IST" name="Default suite" finished-at="2025-11-17T01:13:12 IST" duration-ms="5515">
     <groups>
-      <group name="purchase">
-        <method signature="CreateOrderTest.placeOrder(java.util.List)[pri:0, instance:demo.test.CreateOrderTest@2e61d218]" name="placeOrder" class="demo.test.CreateOrderTest"/>
-      </group> <!-- purchase -->
+      <group name="ErrorValidation">
+        <method signature="ErrorValidationTest.loginErrorValidation()[pri:0, instance:demo.test.ErrorValidationTest@3d9f6567]" name="loginErrorValidation" class="demo.test.ErrorValidationTest"/>
+      </group> <!-- ErrorValidation -->
     </groups>
-    <test started-at="2025-11-17T00:44:08 IST" name="Default test" finished-at="2025-11-17T00:44:32 IST" duration-ms="23631">
-      <class name="demo.test.CreateOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:demo.test.CreateOrderTest@2e61d218]" started-at="2025-11-17T00:44:09 IST" name="launchApplication" finished-at="2025-11-17T00:44:15 IST" duration-ms="5696" status="PASS">
+    <test started-at="2025-11-17T01:13:06 IST" name="Default test" finished-at="2025-11-17T01:13:12 IST" duration-ms="5515">
+      <class name="demo.test.ErrorValidationTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:demo.test.ErrorValidationTest@3d9f6567]" started-at="2025-11-17T01:13:06 IST" name="launchApplication" finished-at="2025-11-17T01:13:10 IST" duration-ms="3961" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="placeOrder(java.util.List)[pri:0, instance:demo.test.CreateOrderTest@2e61d218]" started-at="2025-11-17T00:44:15 IST" name="placeOrder" data-provider="getData" finished-at="2025-11-17T00:44:21 IST" duration-ms="6382" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Sample Test, golu123@gmail.com, Golu@123, ZARA COAT 3, Ind]]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="loginErrorValidation()[pri:0, instance:demo.test.ErrorValidationTest@3d9f6567]" started-at="2025-11-17T01:13:10 IST" name="loginErrorValidation" finished-at="2025-11-17T01:13:12 IST" duration-ms="1211" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- placeOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo.test.CreateOrderTest@2e61d218]" started-at="2025-11-17T00:44:21 IST" name="tearDown" finished-at="2025-11-17T00:44:21 IST" duration-ms="92" status="PASS">
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo.test.ErrorValidationTest@3d9f6567]" started-at="2025-11-17T01:13:12 IST" name="tearDown" finished-at="2025-11-17T01:13:12 IST" duration-ms="222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:demo.test.CreateOrderTest@2e61d218]" started-at="2025-11-17T00:44:21 IST" name="launchApplication" finished-at="2025-11-17T00:44:25 IST" duration-ms="3590" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="placeOrder(java.util.List)[pri:0, instance:demo.test.CreateOrderTest@2e61d218]" started-at="2025-11-17T00:44:25 IST" name="placeOrder" data-provider="getData" finished-at="2025-11-17T00:44:32 IST" duration-ms="6516" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Stand Alone Test, siddhu@patil.com, Siddhu@123, IPHONE 13 PRO, Ind]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- placeOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo.test.CreateOrderTest@2e61d218]" started-at="2025-11-17T00:44:32 IST" name="tearDown" finished-at="2025-11-17T00:44:32 IST" duration-ms="77" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- demo.test.CreateOrderTest -->
+      </class> <!-- demo.test.ErrorValidationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
