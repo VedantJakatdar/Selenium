@@ -9,4 +9,4 @@ Feature: Check login functionality
 
     Examples: 
       | username  | password | 
-      | golu1234 |  Golu@1234   |
+      | golu123@gmail.com |  Golu@1234   |
