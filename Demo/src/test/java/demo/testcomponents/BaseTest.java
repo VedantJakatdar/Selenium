@@ -31,13 +31,12 @@ public class BaseTest {
 		String browserName = System.getProperty("browser") != null ? System.getProperty("browser") : prop.getProperty("browser");
 		if(browserName.contains("chrome")) {
 			//System.setProperty("webdriver.chrome.driver", "D:\\Driver\\chromedriver.exe");
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/WebDriver/chromedriver");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/WebDriver/chromedriver.exe");
 			ChromeOptions options = new ChromeOptions();
 			options.setExperimentalOption("prefs", new HashMap<String, Object>(){{
 				put("profile.password_manager_leak_detection", false);}});
-				driver = new ChromeDriver(options);
 			if(browserName.contains("headless")) {
-				options.addArguments("--headless=new");
+				options.addArguments("--headless");
 				options.addArguments("--window-size=1920,1080");
 				options.addArguments("--no-sandbox");
 				options.addArguments("--disable-dev-shm-usage");
@@ -46,7 +45,8 @@ public class BaseTest {
 				options.addArguments("--remote-allow-origins=*");
 			} else {
 				driver.manage().window().maximize();
-			}	
+			}
+			driver = new ChromeDriver(options);
 		} else if (browserName.equalsIgnoreCase("edge")) {
 			//edge code
 		} else if (browserName.equalsIgnoreCase("firefox")) {
