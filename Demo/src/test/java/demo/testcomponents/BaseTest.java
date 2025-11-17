@@ -30,8 +30,14 @@ public class BaseTest {
 		prop.load(fis);
 		String browserName = System.getProperty("browser") != null ? System.getProperty("browser") : prop.getProperty("browser");
 		if(browserName.contains("chrome")) {
-			//System.setProperty("webdriver.chrome.driver", "D:\\Driver\\chromedriver.exe");
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/WebDriver/chromedriver.exe");
+			String osName = System.getProperty("os.name").toLowerCase();
+			String driverPath;
+			if (osName.contains("win")) {
+			    driverPath = System.getProperty("user.dir") + "/WebDriver/chromedriver.exe";
+			} else {
+			    driverPath = System.getProperty("user.dir") + "/WebDriver/chromedriver";
+			}
+			System.setProperty("webdriver.chrome.driver", driverPath);
 			ChromeOptions options = new ChromeOptions();
 			options.setExperimentalOption("prefs", new HashMap<String, Object>(){{
 				put("profile.password_manager_leak_detection", false);}});
