@@ -42,7 +42,7 @@ public class BaseTest {
 			options.setExperimentalOption("prefs", new HashMap<String, Object>(){{
 				put("profile.password_manager_leak_detection", false);}});
 			if(browserName.contains("headless")) {
-				options.addArguments("--headless");
+				options.addArguments("--headless=new");
 				options.addArguments("--window-size=1920,1080");
 				options.addArguments("--no-sandbox");
 				options.addArguments("--disable-dev-shm-usage");
