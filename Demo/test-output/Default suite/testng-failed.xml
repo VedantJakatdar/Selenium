@@ -7,7 +7,7 @@
         <methods>
           <include name="launchApplication"/>
           <include name="tearDown"/>
-          <include name="placeOrder" invocation-numbers="0 1"/>
+          <include name="placeOrder"/>
         </methods>
       </class> <!-- demo.test.CreateOrderTest -->
     </classes>

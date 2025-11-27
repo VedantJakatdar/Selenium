@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-17T20:16:36 IST" name="Default suite" finished-at="2025-11-17T20:17:03 IST" duration-ms="27115">
+  <suite started-at="2025-11-27T22:53:01 IST" name="Default suite" finished-at="2025-11-27T22:53:28 IST" duration-ms="26732">
     <groups>
       <group name="purchase">
         <method signature="CreateOrderTest.placeOrder(java.util.List)[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" name="placeOrder" class="demo.test.CreateOrderTest"/>
       </group> <!-- purchase -->
     </groups>
-    <test started-at="2025-11-17T20:16:36 IST" name="Default test" finished-at="2025-11-17T20:17:03 IST" duration-ms="27115">
+    <test started-at="2025-11-27T22:53:01 IST" name="Default test" finished-at="2025-11-27T22:53:28 IST" duration-ms="26732">
       <class name="demo.test.CreateOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" started-at="2025-11-17T20:16:37 IST" name="launchApplication" finished-at="2025-11-17T20:16:42 IST" duration-ms="5635" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" started-at="2025-11-27T22:53:02 IST" name="launchApplication" finished-at="2025-11-27T22:53:08 IST" duration-ms="5542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="placeOrder(java.util.List)[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" started-at="2025-11-17T20:16:42 IST" name="placeOrder" data-provider="getData" finished-at="2025-11-17T20:16:50 IST" duration-ms="7195" status="PASS">
+        <test-method signature="placeOrder(java.util.List)[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" started-at="2025-11-27T22:53:08 IST" name="placeOrder" data-provider="getData" finished-at="2025-11-27T22:53:15 IST" duration-ms="7198" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -25,15 +25,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" started-at="2025-11-17T20:16:50 IST" name="tearDown" finished-at="2025-11-17T20:16:50 IST" duration-ms="113" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" started-at="2025-11-27T22:53:15 IST" name="tearDown" finished-at="2025-11-27T22:53:15 IST" duration-ms="292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" started-at="2025-11-17T20:16:50 IST" name="launchApplication" finished-at="2025-11-17T20:16:55 IST" duration-ms="5688" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" started-at="2025-11-27T22:53:15 IST" name="launchApplication" finished-at="2025-11-27T22:53:21 IST" duration-ms="5187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="placeOrder(java.util.List)[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" started-at="2025-11-17T20:16:55 IST" name="placeOrder" data-provider="getData" finished-at="2025-11-17T20:17:03 IST" duration-ms="7143" status="PASS">
+        <test-method signature="placeOrder(java.util.List)[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" started-at="2025-11-27T22:53:21 IST" name="placeOrder" data-provider="getData" finished-at="2025-11-27T22:53:28 IST" duration-ms="7098" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- placeOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" started-at="2025-11-17T20:17:03 IST" name="tearDown" finished-at="2025-11-17T20:17:03 IST" duration-ms="144" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:demo.test.CreateOrderTest@3569fc08]" started-at="2025-11-27T22:53:28 IST" name="tearDown" finished-at="2025-11-27T22:53:28 IST" duration-ms="264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

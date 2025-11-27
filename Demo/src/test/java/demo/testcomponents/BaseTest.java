@@ -32,7 +32,7 @@ public class BaseTest {
 		if(browserName.contains("chrome")) {
 			String osName = System.getProperty("os.name").toLowerCase();
 			String driverPath;
-			if (osName.contains("win")) {
+			if (osName.contains("windows")) {
 			    driverPath = System.getProperty("user.dir") + "/WebDriver/chromedriver.exe";
 			} else {
 			    driverPath = System.getProperty("user.dir") + "/WebDriver/chromedriver";
@@ -49,10 +49,11 @@ public class BaseTest {
 				options.addArguments("--disable-gpu");
 				options.addArguments("--disable-extensions");
 				options.addArguments("--remote-allow-origins=*");
-			} else {
+			} 
+			driver = new ChromeDriver(options);
+			if(!browserName.contains("headless")) {
 				driver.manage().window().maximize();
 			}
-			driver = new ChromeDriver(options);
 		} else if (browserName.equalsIgnoreCase("edge")) {
 			//edge code
 		} else if (browserName.equalsIgnoreCase("firefox")) {
@@ -72,7 +73,9 @@ public class BaseTest {
 	
 	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
-		driver.close();
+		if (driver != null) {
+	        driver.quit();
+	    }
 	}
 	
 	public String getScreenshot(String testCaseName, WebDriver driver) throws IOException {
